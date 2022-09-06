@@ -6,17 +6,11 @@ public class NewBehaviourScript2 : MonoBehaviour
 {
     public Vector3 accelerationVector; 
     public Vector3 relativeForceVector;
-    public Vector3 velocityVector2;
+    public Vector3 velocityVector;
     public float massa = 2;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //calculo de posicao com forca
         Velocidade();
@@ -34,14 +28,14 @@ public class NewBehaviourScript2 : MonoBehaviour
     void Velocidade()
     {
         Aceleracao();
-        velocityVector2 += accelerationVector * Time.deltaTime;
+        velocityVector += accelerationVector * Time.deltaTime;
 
     }
 
     void Posicao()
     {
 
-        transform.position += velocityVector2 * Time.deltaTime;
+        transform.position += velocityVector * Time.deltaTime;
 
     }
 
