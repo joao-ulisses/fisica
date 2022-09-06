@@ -7,13 +7,6 @@ public class NewBehaviourScript1 : MonoBehaviour
     public Vector3 accellerationVector;
 	public Vector3 velocityVector2;
 	
-	//Start is called before the first frame update
-	
-	void Start() 
-	{
-		
-	}	
-	
 	//Update is called once per frame
 	void FixedUpdate() 
 	{
